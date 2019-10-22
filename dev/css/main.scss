@@ -652,6 +652,10 @@ $peach: #f09d66;
     }
   }
 
+  .slider .slider-third, .slider .slider-second {
+    padding-top: 150px;
+  }
+
   .slider-third {
     .line {
       &::before {
@@ -1157,6 +1161,30 @@ $peach: #f09d66;
   }
 }
 
+@media only screen and (max-width: 460px) {
+
+
+  .gallery-summer .title-caption {
+    h2 {
+      &::after {
+        width: 2%;
+      }
+      &::before {
+        width: 2%;
+      }
+
+      .square {
+        &::before {
+          left: 5%;
+        }
+        &::after {
+          right: 5%;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .gallery-summer .title-caption {
     h2 {
@@ -1511,9 +1539,10 @@ footer {
   @media only screen and (max-width: 460px) {
     .footer-body {
       flex-direction: column;
+      margin-bottom: 0;
     }
     .footer-title {
-      margin-bottom: 15px;
+      margin-bottom: 40px;
     }
     .footer-nav {
       margin-bottom: 35px;
